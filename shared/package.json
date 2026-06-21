@@ -1,0 +1,14 @@
+{
+  "name": "@belenay/shared",
+  "version": "1.0.0",
+  "description": "Belenay Mobilya - Ortak tip tanımlamaları ve yardımcı fonksiyonlar",
+  "main": "dist/types/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

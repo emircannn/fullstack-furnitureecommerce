@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    // ---- Hedef JavaScript Versiyonu ----
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+
+    // ---- Modül Ayarları ----
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+
+    // ---- Derleme Ayarları ----
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "preserve",
+    "incremental": true,
+
+    // ---- Sıkı Mod Ayarları ----
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+
+    // ---- Çıktı Ayarları ----
+    "noEmit": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    // ---- Yol Takma Adları ----
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/store/*": ["./src/store/*"],
+      "@/types/*": ["./src/types/*"],
+      "@/i18n/*": ["./src/i18n/*"]
+    },
+
+    // ---- Next.js Eklentisi ----
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
